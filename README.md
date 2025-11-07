@@ -1,2 +1,2 @@
-# ingress-to-gatewayapi
+# ingress-to-gateway
 Migration strategy to gateway api
