@@ -15,27 +15,23 @@ terraform plan
 terraform apply --auto-approve
 ```
 
-Once Argo CD is deployed, deploy the first App:
+STep 1:
 
 ```bash
-cd argo-app
-kubectl apply -f argo-app.yaml
+
 ```
 
-Access ArgoCD UI:
+Step 2:
 
 ```bash
 kubectl get ingress -n argocd
 ```
-Open Loadbalancer URL
+Step 3:
 
-Get the Admin password 
 ```bash
-kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+
 ```
-Login with:
-Username: admin
-Password: (the decoded value)
+
 
 Note: These resources will cost you money. Do not forget to Run `terraform destroy` when you are done.
 
